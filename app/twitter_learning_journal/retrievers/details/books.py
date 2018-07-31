@@ -26,7 +26,7 @@ legacy_books = [
     Book(screen_name='jrj2280',
          title='Head First Python',
          classification='engineering',
-         pages=251,
+         pages=494,
          start_date=_date('2018-05-25'),
          stop_date=_date('2018-09-01'),
          ),

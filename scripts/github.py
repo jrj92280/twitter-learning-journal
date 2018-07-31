@@ -10,6 +10,8 @@ from app.twitter_learning_journal.services.logging_service import LoggingService
 
 logger = LoggingService('github')
 
+github_user = 'jrj92280'
+
 pickle_dir = './data/pickle/github/'
 json_dir = './data/json/'
 
@@ -46,7 +48,6 @@ def _get_url(url):
 
 if __name__ == '__main__':
     # run until all hits are cache loads or 403 github rate limit
-    github_user = 'jrj92280'
     repositories_url = f'https://api.github.com/users/{github_user}/repos'
 
     response = _get_url(repositories_url)
